@@ -7,7 +7,7 @@ https://dida365.com\/api\/v2\/user\/status url script-response-body https://raw.
 hostname = dida365.com
 */
 
-var body = $response.body.replace(/"pro\":\\w+"/g, '"pro\":true"').replace(/"proEndDate\":\"\\d+-\\d+-\\d+"/g, '"proEndDate\":\"2033-01-01"');
+var body = $response.body.replace(/"pro\":\\w+", '"pro\":true"').replace(/"proEndDate\":\"\\d+-\\d+-\\d+", '"proEndDate\":\"2033-01-01"');
 $done({ body });
 
 
